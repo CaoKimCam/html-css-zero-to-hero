@@ -84,8 +84,6 @@ html{
     right: 0;
     z-index: 1;
     /* z-index:1 để header nổi lên so với ảnh */
-    overflow: hidden;
-    /* thuộc tính vượt quá nó sẽ bị ẩn */
 }
 
 #nav{

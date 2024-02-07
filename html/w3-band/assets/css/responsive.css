@@ -18,9 +18,27 @@
         display: block;
         /* để các thẻ trong more bấm thanh vẫn được */
     }
+    #nav li a{
+        padding: 1px 24px;
+    }
 
     #nav > li:first-child{
         display: inline-block;
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
+        /* tối thiểu 42-46px để dễ tương tác */
+    }
+
+    #header {
+        overflow: hidden;
     }
 
     #header .mobile-menu-btn{

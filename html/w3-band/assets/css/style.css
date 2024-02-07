@@ -138,10 +138,19 @@ html{
 #nav .nav-arrow-down{
     font-size: 10px;
 }
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     /* float: right: mất tính chất kế thừa chiều ngang */
+    padding: 0 21px;
 }
 
 #header .menu-icon,

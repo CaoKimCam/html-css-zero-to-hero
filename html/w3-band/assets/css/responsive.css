@@ -14,6 +14,19 @@
         display: block;
     }
 
+    #nav{
+        display: block;
+        /* để các thẻ trong more bấm thanh vẫn được */
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
     #header .search-btn{
         display: none;
     }

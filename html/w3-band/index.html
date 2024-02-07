@@ -6,6 +6,7 @@
     <title>The band</title>
     <link rel='shortcut icon' href='./assets/img/band/favicon.jpg' type='image/x-icon'>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -13,12 +14,12 @@
         <div id="header">
             <!-- begin nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">More
+                    <a href="#">More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
@@ -29,10 +30,15 @@
                 </li>
             </ul>
             <!-- end nav -->
+
             <!-- begin search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search">
                 </i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- end search button -->
         </div>
@@ -233,6 +239,35 @@
         modalContainer.addEventListener('click', function(event){
             event.stopPropagation()//ngung noi bot
         })
+    </script>
+
+    <script>
+        var header = document.getElementById('header')
+        var mobileMenu = document.getElementById('mobile-menu')
+        var headerHeight = header.clientHeight;
+
+        // Đóng/Mở mobile menu
+        mobileMenu.onclick = function(){
+            // console.log(header.clientHeight);
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed){
+                header.style.height='auto';
+            } else {
+                header.style.height='46px';
+            }
+        }
+
+        //tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        // console.log(varmenuItems)        
+        for (var i =0; i <menuItems.length; i++){
+            var menuItem = menuItems[i];
+
+            menuItem.onclick=function(){
+                // console.log(this)
+                header.style.height = null;
+            }
+        }
     </script>
 </body>
 </html>

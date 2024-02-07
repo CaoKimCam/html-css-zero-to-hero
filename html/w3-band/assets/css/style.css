@@ -84,6 +84,8 @@ html{
     right: 0;
     z-index: 1;
     /* z-index:1 để header nổi lên so với ảnh */
+    overflow: hidden;
+    /* thuộc tính vượt quá nó sẽ bị ẩn */
 }
 
 #nav{
@@ -136,12 +138,13 @@ html{
 #nav .nav-arrow-down{
     font-size: 10px;
 }
-
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     /* float: right: mất tính chất kế thừa chiều ngang */
 }
 
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
@@ -153,6 +156,14 @@ html{
 
 #header .search-btn:hover{
     background-color: #f44336;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
 }
 
 #slider{
@@ -189,6 +200,7 @@ html{
 
 #content .content-section{
     width: 800px;
+    width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;

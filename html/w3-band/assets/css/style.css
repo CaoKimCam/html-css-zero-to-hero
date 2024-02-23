@@ -135,7 +135,7 @@ html{
 }
 #nav .subnav a{
     color: #000;
-    padding: 0 12px;
+    padding: 5px 12px;
 }
 #nav .nav-arrow-down{
     font-size: 10px;
@@ -431,6 +431,15 @@ label.modal-label{
 .contact-info{
     font-size: 18px;
     line-height: 1.4;
+}
+
+.contact-info a{
+    color: #0055f2;
+    opacity: 0.6;
+}
+
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-form{

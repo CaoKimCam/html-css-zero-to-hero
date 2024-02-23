@@ -4,6 +4,31 @@
 
 }
 
+/* Tablet & mobile */
+@media (max-width: 1023px){
+    .btn{
+        padding: 15px 16px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+    }
+
+    .contact-info{
+        line-height: 2;
+    }
+
+    #footer .socials-list a{
+        font-size: 48px;
+        margin: 0 8px;
+    }
+    #footer .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    
+}
+
 /* Tablet */
 @media (min-width: 740px) and (max-width:1023px){
 }
@@ -43,7 +68,7 @@
 
     #nav .subnav a{
         color: #fff;
-        padding: 5px 41px;
+        padding: 41px;
         /* tối thiểu 42-46px để dễ tương tác */
     }
 
@@ -79,7 +104,7 @@
     }
 
     .contact-form{
-        margin-top: 16px;
+        margin-top: 32px;
     }
 
 }

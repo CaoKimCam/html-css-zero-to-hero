@@ -183,7 +183,7 @@ html{
     margin-top: 46px;
     padding-top: 50%;
     /* 50% này là theo chiều ngang của nó */
-    background: url('/assets/img/band/slider/slider1.jpg') top center /  cover no-repeat;
+    background: url('../img/band/slider/slider1.jpg') top center /  cover no-repeat;
     position: relative;
 }
 #slider .text-content{
@@ -207,6 +207,7 @@ html{
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 #content {
 }

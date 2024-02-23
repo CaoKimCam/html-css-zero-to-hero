@@ -56,6 +56,10 @@ html{
     margin-top: 16px !important;
 }
 
+.mt-32{
+    margin-top: 32px;
+}
+
 .btn:hover{
     background-color: #ccc;
     color: #000;
